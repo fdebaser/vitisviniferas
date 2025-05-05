@@ -1,97 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vitisviniferas</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
-    <style>
-      body {
-        background-color: #f5f2ec;
-        font-family: 'Courier New', monospace;
-        color: #1a1a1a;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        background: black;
-        color: white;
-        text-align: center;
-        padding: 4rem 1rem 2rem;
-        font-family: Impact, sans-serif;
-        text-transform: uppercase;
-        font-size: 3rem;
-        letter-spacing: 0.1em;
-      }
-      nav {
-        background: #eee;
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        font-family: monospace;
-        text-transform: uppercase;
-      }
-      .container {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        gap: 3rem;
-        padding: 2rem;
-        max-width: 1200px;
-        margin: auto;
-      }
-      main {
-        transform: rotate(-0.5deg);
-        background: rgba(255,255,255,0.9);
-        padding: 2rem;
-        box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
-        border: 2px dashed #333;
-      }
-      aside {
-        background: #000;
-        color: #fff;
-        padding: 2rem;
-        font-family: monospace;
-      }
-      figure img {
-        width: 100%;
-        border: 4px solid black;
-        margin-bottom: 1rem;
-        filter: grayscale(10%) contrast(110%);
-      }
-      footer {
-        background: #111;
-        color: #ccc;
-        text-align: center;
-        padding: 2rem;
-        font-size: 0.8rem;
-        margin-top: 4rem;
-      }
-      h1, h2 {
-        font-family: Georgia, serif;
-      }
-    </style>
-  </head>
-  <body>
-    <header>Vitisviniferas</header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vitisviniferas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <style>
+    body {
+      background-color: #f5f2ec;
+      font-family: 'Georgia', serif;
+      color: #1a1a1a;
+    }
+    header {
+      background: black;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-family: 'Courier New', monospace;
+      font-size: 2.5rem;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+    nav ul li a {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    main {
+      background: #fff;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    figure img {
+      width: 100%;
+      border: 2px solid black;
+      margin-bottom: 1rem;
+    }
+    aside {
+      background: #000;
+      color: #fff;
+      padding: 1.5rem;
+    }
+    aside ul li a {
+      color: white;
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
 
-    <nav>
-      <a href="#">Articles</a>
-      <a href="#">Producers</a>
-      <a href="#">Regions</a>
-      <a href="#">About</a>
-    </nav>
+  <header>Vitisviniferas</header>
 
-    <div class="container">
-      <main>
-        <h2>Natural Wine: A Concept So Pure, It Doesn’t Even Exist</h2>
-        <h3>By Vitisviniferas</h3>
-        <figure>
-          <img src="https://images.unsplash.com/photo-1580845276033-4bb5d07a3bb6?auto=format&fit=crop&w=1470&q=80" alt="Wine bottle and glass" />
-          <figcaption>Image by Kym Ellis on Unsplash</figcaption>
-        </figure>
-        <p>Let’s get one thing straight: there’s no official definition of “natural wine.” It’s the Schrödinger's cat of the wine world — simultaneously everything and nothing. Ask ten sommeliers what it means, and you’ll get eleven answers, twelve if they’ve had a glass.</p>
-        <p>In its purest form (pun intended), natural wine is supposed to mean <em>nothing added, nothing taken away</em>. Grapes, yeast, bottle, cheers. No lab-tinkering, no oak flavor pumped in through a syringe, and definitely no 200% new oak barrels blessed by a corporate boardroom.</p>
-        <p>But lately, the term “natural” has been hijacked. It’s become the badge of honor for cloudy garage projects with more volatile acidity than charm. Some of these so-called wines are basically kombucha in disguise, and we’re all pretending it’s fine because the label is cool and the winemaker has a moustache.</p>
-        <p>That’s not what natural wine <em>should</em> be.</p>
-        <p>Let’s talk about the <strong>real heroes</strong> — the old-school rebels who were making wine this way before it was a hashtag. Enter: <strong>The Gang of Four</strong> from Beaujolais. Marcel Lapierre, Jean Foillard, Guy Breton, and Jean-Paul
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Journal</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#">Articles</a></li>
+      <li><a href="#">Producers</a></li>
+      <li><a href="#">Regions</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <main>
+      <h2>Natural Wine: A Concept So Pure, It Doesn’t Even Exist</h2>
+      <h3>By Vitisviniferas</h3>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1604908813062-18e1fd9e97c2?auto=format&fit=crop&w=1470&q=80" alt="Natural wine bottle" />
+        <figcaption>Image by Thomas Schaefer on Unsplash</figcaption>
+      </figure>
+
+      <p>Let’s get one thing straight: there’s no official definition of “natural wine.” It’s the Schrödinger’s cat of the wine world — simultaneously everything and nothing. Ask ten sommeliers what it means, and you’ll get eleven answers, twelve if they’ve had a glass.</p>
+
+      <p>In its purest form (pun intended), natural wine is supposed to mean <em>nothing added, nothing taken away</em>. Grapes, yeast, bottle, cheers. No lab-tinkering, no oak flavor pumped in through a syringe, and definitely no 200% new oak barrels blessed by a corporate boardroom.</p>
+
+      <p>But lately, the term “natural” has been hijacked. It’s become the badge of honor for cloudy garage projects with more volatile acidity than charm. Some of these so-called wines are basically kombucha in disguise, and we’re all pretending it’s fine because the label is cool and the winemaker has a moustache.</p>
+
+      <p>That’s not what natural wine <em>should</em> be.</p>
+
+      <p>Let’s talk about the <strong>real heroes</strong> — the old-school rebels who were making wine this way before it was a hashtag. Enter: <strong>The Gang of Four</strong> from Beaujolais. Marcel Lapierre, Jean Foillard, Guy Breton, and Jean-Paul Thévenet. These guys weren’t chasing trends — they were reviving the soul of Gamay, returning to the teachings of Jules Chauvet (the OG natural wine scientist-poet).</p>
+
+      <p>Their wines? Lively, soulful, expressive — without ever smelling like a barnyard mishap. Clean, but unfiltered. Fresh, but deep. Proof that you don’t need flaws to make something honest.</p>
+    </main>
+
+    <aside>
+      <h3>Browse by</h3>
+      <ul>
+        <li><a href="#">Producer</a></li>
+        <li><a href="#">Country</a></li>
+        <li><a href="#">Grape</a></li>
+        <li><a href="#">Style</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    Vitisviniferas © All rights fermented • Powered by wild yeast and sarcasm.
+  </footer>
+
+</body>
+</html>
